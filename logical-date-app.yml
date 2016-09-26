@@ -7,7 +7,7 @@ spring:
       
 #Discovery Server Access
 eureka:
-#  client:
+  client:
 #    serviceUrl:
 #      defaultZone: http://localhost:8761/eureka/ 
     enabled: true
