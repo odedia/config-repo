@@ -1,0 +1,22 @@
+# For multiple instances you should override this with on server boot using --server.port=9001 for example  (or any other port number)
+logging:
+  level:
+    org.springframework.security: INFO
+    
+security:
+  basic:
+    enabled: false
+  user:
+    password: spring123
+    
+zuul: 
+ retryable: true 
+ routes:
+   widgets-service: /widgets/**
+
+# Discovery Server Access
+eureka:
+  instance:
+      metadataMap:
+        instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}} #Register the gateway also in Eureka using a unique instance ID.
+
