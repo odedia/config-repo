@@ -3,7 +3,7 @@ spring:
   data:
     cassandra:
       keyspace-name: logical_date
-      contact-points: illin1111
+      contact-points: 10.234.164.220
       
 #Discovery Server Access
 eureka:
