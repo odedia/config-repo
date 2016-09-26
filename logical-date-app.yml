@@ -41,5 +41,7 @@ api:
   version: v1
 
 security:
+  basic:
+    enabled: false
   user:
     password: spring123
