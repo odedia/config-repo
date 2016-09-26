@@ -1,0 +1,45 @@
+# Spring properties
+spring:
+  data:
+    cassandra:
+      keyspace-name: logical_date
+      contact-points: illin1111
+      
+#Discovery Server Access
+eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://localhost:8761/eureka/ 
+    enabled: true
+    healthcheck:
+      enabled: true
+      registerWithEureka: true
+      fetchRegistry: true
+    instance:
+      metadataMap:
+        instanceId: logical-date-app:${spring.application.instance_id:${random.value}}  #a random instance id
+      appname: logical-date-app
+ 
+
+ribbon:
+    eureka:
+        enabled: true
+
+refdb:
+  driverClassName: oracle.jdbc.OracleDriver
+
+
+# For multiple instances you should override this with on server boot using --server.port=9001 for example  (or any other port number)
+#server:
+#  port: 10003
+logging:
+  level:
+    org.springframework.security: INFO
+
+#custom settings
+api:
+  version: v1
+
+security:
+  user:
+    password: spring123
