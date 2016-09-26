@@ -1,0 +1,52 @@
+# Spring properties
+spring:
+  data:
+    cassandra:
+      keyspace-name: customer_journey
+      contact-points: 10.234.164.220
+  cloud:
+    stream:
+      bindings:
+        output:
+          destination: memo
+          content-type: application/json
+      kafka:
+        binder:
+          zkNodes: 10.234.164.220
+          brokers: 10.234.164.220
+
+# Discovery Server Access
+eureka:
+  client:
+ #   serviceUrl:
+ #     defaultZone: http://localhost:8761/eureka/
+    enabled: true
+    healthcheck:
+      enabled: true
+      registerWithEureka: true
+      fetchRegistry: true
+    instance:
+      metadataMap:
+        instanceId: memo-services-app:${spring.application.instance_id:${random.value}}  #a random instance id
+
+ribbon:
+    eureka:
+        enabled: true
+
+
+# For multiple instances you should override this with on server boot using --server.port=9001 for example  (or any other port number)
+#server:
+#  port: 10004
+logging:
+  level:
+    org.springframework.security: INFO
+
+#custom settings
+api:
+  version: v1
+
+security:
+  basic:
+    enabled: false
+  user:
+    password: unix11
