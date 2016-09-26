@@ -1,0 +1,16 @@
+# Discovery Server Access
+eureka:
+  instance:
+    metadataMap:
+      instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}} #a random instance id
+
+
+logging:
+  level:
+    org.springframework.security: INFO
+
+security:
+  basic:
+    enabled: false
+  user:
+    password: Spring123
