@@ -1,9 +1,9 @@
 # Spring properties
-spring:
-  data:
-    cassandra:
-      keyspace-name: logical_date
-      contact-points: 10.234.164.220
+#spring:
+#  data:
+#    cassandra:
+#      keyspace-name: logical_date
+#      contact-points: 10.234.164.220
       
 #Discovery Server Access
 eureka:
