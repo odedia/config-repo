@@ -13,4 +13,4 @@ security:
   basic:
     enabled: false
   user:
-    password: Spring123
+    password: spring
