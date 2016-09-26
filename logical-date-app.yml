@@ -26,9 +26,6 @@ ribbon:
         enabled: true
 
 refdb:
-  password: MTTAPP24
-  username: MTTAPP24
-  url: jdbc:oracle:thin:@illin3642:1521:MTRENS6
   driverClassName: oracle.jdbc.OracleDriver
 
 
