@@ -3,12 +3,6 @@ logging:
   level:
     org.springframework.security: INFO
     
-security:
-  basic:
-    enabled: false
-  user:
-    password: spring123
-    
 zuul: 
  retryable: true 
  routes:
