@@ -6,15 +6,16 @@ spring:
       contact-points: 10.234.164.220
   cloud:
     stream:
+      defaultBinder: rabbit
       bindings:
         output:
           destination: memo
           content-type: application/json
+          binder: kafka
       kafka:
         binder:
           zkNodes: 10.234.164.220
           brokers: 10.234.164.220
-
 # Discovery Server Access
 eureka:
   client:
