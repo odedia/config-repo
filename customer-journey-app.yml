@@ -10,7 +10,7 @@ eureka:
   client:
     enabled: true
     healthcheck:
-      enabled: true
+      enabled: false
       sensitive: false
       registerWithEureka: true
       fetchRegistry: true
