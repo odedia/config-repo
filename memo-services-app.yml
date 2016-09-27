@@ -33,10 +33,6 @@ ribbon:
     eureka:
         enabled: true
 
-ensemble:
-  logicalDateURL: "https://logical-date-app/logicalDate"
-
-
 # For multiple instances you should override this with on server boot using --server.port=9001 for example  (or any other port number)
 #server:
 #  port: 10004
