@@ -1,5 +1,5 @@
 ensemble:
-  logicalDateURL: "https://logical-date-app/logicalDate"
+  logicalDateURL: "http://logical-date-app/logicalDate"
 
 security:
   basic:
