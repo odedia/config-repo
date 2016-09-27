@@ -46,3 +46,6 @@ logging:
 #custom settings
 api:
   version: v1
+  
+ensemble:
+  memoServiceURL: https://memo-services-app/memo-list/v1/
