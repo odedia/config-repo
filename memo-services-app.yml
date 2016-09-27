@@ -6,12 +6,12 @@ spring:
       contact-points: 10.234.164.220
   cloud:
     stream:
-      defaultBinder: rabbit
+#      defaultBinder: rabbit
       bindings:
         output:
           destination: memo
           content-type: application/json
-          binder: kafka
+ #         binder: kafka
       kafka:
         binder:
           zkNodes: 10.234.164.220
@@ -19,8 +19,6 @@ spring:
 # Discovery Server Access
 eureka:
   client:
- #   serviceUrl:
- #     defaultZone: http://localhost:8761/eureka/
     enabled: true
     healthcheck:
       enabled: true
