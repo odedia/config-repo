@@ -28,9 +28,6 @@ eureka:
     instance:
       metadataMap:
         instanceId: customer-journey:${spring.application.instance_id:${random.value}}  #a random instance id
-      appname: customer-journey-app
-      prefer-ip-address: true
-
 ribbon:
     eureka:
         enabled: true
