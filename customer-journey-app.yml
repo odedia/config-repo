@@ -3,7 +3,7 @@ spring:
   data:
     cassandra:
       keyspace-name: customer_journey
-      contact-points: 10.234.164.220
+      contact-points: illin1111
 #  cloud:
 #    stream:
 #      bindings:
