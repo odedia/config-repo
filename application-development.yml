@@ -1,0 +1,8 @@
+ensemble:
+  logicalDateURL: "http://logical-date-app/logicalDate"
+
+security:
+  basic:
+    enabled: false
+  user:
+password: spring123
