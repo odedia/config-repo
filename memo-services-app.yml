@@ -41,3 +41,5 @@ logging:
 api:
   version: v1
 
+ensemble:
+  logicalDateURL: "https://logical-date-app/logicalDate"
