@@ -34,8 +34,6 @@ ribbon:
         enabled: true
 
 # For multiple instances you should override this with on server boot using --server.port=9001 for example  (or any other port number)
-#server:
-#  port: 10004
 logging:
   level:
     org.springframework.security: INFO
@@ -44,8 +42,3 @@ logging:
 api:
   version: v1
 
-security:
-  basic:
-    enabled: false
-  user:
-    password: unix11
