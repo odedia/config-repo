@@ -4,16 +4,16 @@ spring:
     cassandra:
       keyspace-name: customer_journey
       contact-points: 10.234.164.220
-  cloud:
-    stream:
-      bindings:
-        output:
-          destination: memo
-          content-type: application/json
-      kafka:
-        binder:
-          zkNodes: 10.234.164.220
-          brokers: 10.234.164.220
+#  cloud:
+#    stream:
+#      bindings:
+#        output:
+#          destination: memo
+#          content-type: application/json
+#      kafka:
+#        binder:
+#          zkNodes: 10.234.164.220
+#          brokers: 10.234.164.220
 
 # Discovery Server Access
 eureka:
