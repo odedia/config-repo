@@ -5,4 +5,4 @@ security:
   basic:
     enabled: false
   user:
-password: spring123
+    password: spring123
