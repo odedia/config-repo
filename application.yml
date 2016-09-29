@@ -1,6 +1,6 @@
 ensemble:
   logicalDateURL: "https://logical-date-app/logicalDate"
-
+  future: "20500101"
 security:
   basic:
     enabled: false
