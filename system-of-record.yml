@@ -1,0 +1,32 @@
+# Spring properties
+spring:
+  cloud:
+    stream:
+      bindings:
+        output:
+          destination: memo_sync
+          content-type: application/json
+      kafka:
+        binder:
+          zkNodes: 10.234.164.220
+          brokers: 10.234.164.220
+# Discovery Server Access
+eureka:
+  client:
+    enabled: true
+    healthcheck:
+      enabled: true
+      registerWithEureka: true
+      fetchRegistry: true
+    instance:
+      metadataMap:
+        instanceId: system-of-record:${spring.application.instance_id:${random.value}}  #a random instance id
+
+ribbon:
+    eureka:
+        enabled: true
+
+# For multiple instances you should override this with on server boot using --server.port=9001 for example  (or any other port number)
+logging:
+  level:
+    org.springframework.security: INFO
