@@ -10,18 +10,7 @@ spring:
         binder:
           zkNodes: 10.234.164.220
           brokers: 10.234.164.220
-# Discovery Server Access
-eureka:
-  client:
-    enabled: true
-    healthcheck:
-      enabled: true
-      registerWithEureka: true
-      fetchRegistry: true
-    instance:
-      metadataMap:
-        instanceId: system-of-record:${spring.application.instance_id:${random.value}}  #a random instance id
-
+          
 ribbon:
     eureka:
         enabled: true
