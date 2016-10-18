@@ -19,3 +19,6 @@ ribbon:
 logging:
   level:
     org.springframework.security: INFO
+
+ensemble:
+  systemOfRecordURL: https://system-of-record
