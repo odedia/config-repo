@@ -22,3 +22,6 @@ logging:
 
 ensemble:
   systemOfRecordURL: https://system-of-record
+
+server:
+  port: 10009
