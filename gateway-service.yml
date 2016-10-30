@@ -7,6 +7,12 @@ zuul:
  retryable: true 
  routes:
    widgets-service: /widgets/**
+   tmus-ui:
+     path: /tmus-ui/**
+     url: http://tmus-ui.local.pcfdev.io
+   tmus-api:
+     path: /tmus-api/**
+     url: http://tmus-api.local.pcfdev.io
 
 # Discovery Server Access
 eureka:
