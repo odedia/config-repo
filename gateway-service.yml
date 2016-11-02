@@ -5,6 +5,7 @@ logging:
     
 zuul: 
  retryable: true 
+ sensitiveHeaders: Cookie,Set-Cookie
  routes:
    widgets-service: /widgets/**
    tmus-ui:
